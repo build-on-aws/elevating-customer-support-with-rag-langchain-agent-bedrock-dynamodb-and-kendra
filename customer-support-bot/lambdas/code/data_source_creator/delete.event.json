@@ -1,0 +1,21 @@
+{
+    "RequestType": "Delete",
+    "ServiceToken": "arn:aws:lambda:us-west-2:320205374826:function:kendra-index-FnCRdatasource483468B7-a0gSZM9dG64O",
+    "ResponseURL": "https://cloudformation-custom-resource-response-uswest2.s3-us-west-2.amazonaws.com/arn%3Aaws%3Acloudformation%3Aus-west-2%3A320205374826%3Astack/kendra-index/9ba2dfa0-50fb-11ee-b463-0a3aed41439b%7CCR29646A773%7C1ada474a-f088-4820-a538-e87d689bc24e?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230916T050041Z&X-Amz-SignedHeaders=host&X-Amz-Expires=7200&X-Amz-Credential=AKIA54RCMT6SBI2P4EYF%2F20230916%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Signature=bf064488cc8043f42d0ae6a63066cd3c7feaad10bfb44f5b5b9c8b7f4f8a2394",
+    "StackId": "arn:aws:cloudformation:us-west-2:320205374826:stack/kendra-index/9ba2dfa0-50fb-11ee-b463-0a3aed41439b",
+    "RequestId": "1ada474a-f088-4820-a538-e87d689bc24e",
+    "LogicalResourceId": "CR29646A773",
+    "PhysicalResourceId": "NOT_YET",
+    "ResourceType": "Custom::CRDataSource",
+    "ResourceProperties": {
+        "ServiceToken": "arn:aws:lambda:us-west-2:320205374826:function:kendra-index-FnCRdatasource483468B7-a0gSZM9dG64O",
+        "template": "{\"connectionConfiguration\": {\"repositoryEndpointMetadata\": {\"s3SeedUrl\": \"s3://kendra-index-urlsbucket330222cc-uh1kqmon5xj7/s3_urls/connect_blogs_1.txt\", \"siteMapUrls\": null, \"seedUrlConnections\": null, \"s3SiteMapUrl\": null, \"authentication\": \"NoAuthentication\"}}, \"enableIdentityCrawler\": false, \"syncMode\": \"FORCED_FULL_CRAWL\", \"additionalProperties\": {\"inclusionFileIndexPatterns\": [], \"rateLimit\": \"300\", \"maxFileSize\": \"50\", \"crawlDepth\": \"1\", \"crawlAllDomain\": false, \"crawlSubDomain\": false, \"inclusionURLIndexPatterns\": [\"*.aws.amazon.com/blogs/contact-center/.*\"], \"exclusionFileIndexPatterns\": [], \"proxy\": {}, \"exclusionURLCrawlPatterns\": [\"*./tag/.*\"], \"exclusionURLIndexPatterns\": [\"*./tag/.*\"], \"crawlAttachments\": false, \"honorRobots\": true, \"inclusionURLCrawlPatterns\": [\"*.aws.amazon.com/blogs/contact-center/.*\"], \"crawlDomainsOnly\": true, \"maxLinksPerUrl\": \"100\"}, \"type\": \"WEBCRAWLERV2\", \"version\": \"1.0.0\", \"repositoryConfigurations\": {\"attachment\": {\"fieldMappings\": [{\"dataSourceFieldName\": \"category\", \"indexFieldName\": \"_category\", \"indexFieldType\": \"STRING\"}, {\"dataSourceFieldName\": \"sourceUrl\", \"indexFieldName\": \"_source_uri\", \"indexFieldType\": \"STRING\"}]}, \"webPage\": {\"fieldMappings\": [{\"dataSourceFieldName\": \"category\", \"indexFieldName\": \"_category\", \"indexFieldType\": \"STRING\"}, {\"dataSourceFieldName\": \"sourceUrl\", \"indexFieldName\": \"_source_uri\", \"indexFieldType\": \"STRING\"}]}}}",
+        "schedule": "",
+        "language_code": "en",
+        "role_arn": "arn:aws:iam::320205374826:role/kendra-index-IKSRC7156E80-UBOWSCNEAXV9",
+        "name": "connect-blogs-100-v5",
+        "description": "Creado con custom resources",
+        "index_id": "9cfc368a-f4d6-4469-96bf-a6476b94ac31",
+        "type": "TEMPLATE"
+    }
+}
