@@ -36,7 +36,7 @@ And the best... ready to deploy using [AWS Cloud Development Kit](https://aws.am
 ✅ **Clone the repo**
 
 ```
-git clone https://github.com/elizabethfuentes12/aws-qa-agent-with-bedrock-kendra-and-memory.git
+git clone https://github.com/build-on-aws/elevating-customer-support-with-rag-langchain-agent-bedrock-dynamodb-and-kendra.git
 ```
 
 ✅ **Go to**: 
@@ -102,7 +102,7 @@ cdk deploy
 
 ✅ **Review what is deployed in the stack:** 
 
-- Go to the [AWS Cloudformation console](onsole.aws.amazon.com/cloudformation), select the region where you deployed and click on `CustomerSupportBotStack`:
+- Go to the [AWS Cloudformation console](console.aws.amazon.com/cloudformation), select the region where you deployed and click on `CustomerSupportBotStack`:
 
 Then go to the resources tab and explore what's deployed:
 
@@ -140,7 +140,7 @@ The CDK stack creates the dynamoDB table named `Passenger_ID` with the [sample p
 
 ![Digrama parte 1](/imagen/passanger_information.gif)
 
-> The multilanguage function depends on the [LLM you use](https://aws.amazon.com/es/bedrock/).
+> The multilanguage function depends on the [LLM you use](https://aws.amazon.com/bedrock/).
 
 
 ✅ **Send it voice notes:**  
@@ -152,6 +152,7 @@ The CDK stack creates the dynamoDB table named `Passenger_ID` with the [sample p
 
 ## 🚀 Keep testing the agent, play with the prompt in this Amazon Lambda function and adjust it to your need.
 
+
 ## Security
 
 See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
@@ -159,4 +160,3 @@ See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more inform
 ## License
 
 This library is licensed under the MIT-0 License. See the LICENSE file.
-
